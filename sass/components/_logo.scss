@@ -1,0 +1,24 @@
+.logo {
+  color: $hoverTextColor;
+  text-decoration: none;
+  font-family: $secondaryFamily;
+  font-weight: $primaryTitleWeight;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+.logo__color {
+  color: $titleTextColor;
+}
+
+.logo__footer {
+  color: $heroTextColor;
+}

@@ -1,0 +1,205 @@
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.buttons__list {
+  display: flex;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.project {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+
+.portfolio__buttons {
+  border: transparent;
+  font-family: $primaryFamily;
+  font-weight: $secondaryTitleWeight;
+  background-color: $secondaryBackgroundColor;
+  color: $titleTextColor;
+  font-size: $secondarySize;
+  line-height: 1.63;
+  letter-spacing: $primaryLetterSpacing;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    background-color: $hoverBackgroundColor;
+    color: $heroTextColor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+}
+
+.buttons__current {
+  background-color: $hoverBackgroundColor;
+  color: $heroTextColor;
+}
+
+.buttons__item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:nth-child(n + 4) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+.project__title {
+  font-weight: $primaryTitleWeight;
+  font-size: $portfolioTitleSize;
+  line-height: 2;
+  letter-spacing: $titleButtonLetterSpacing;
+  color: $titleTextColor;
+  margin-bottom: 4px;
+}
+.project__label {
+  font-size: $secondarySize;
+  line-height: 1.87;
+  letter-spacing: $primaryLetterSpacing;
+}
+
+.project__foto {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
+}
+.project__container {
+  width: 100%;
+  padding: 20px 24px;
+  background: $primaryBackgroundColor;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.one-line {
+  @media screen and (min-width: 768px) {
+    min-height: 147.91px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-height: 111.91px;
+  }
+}
+.project__item {
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &:hover {
+    .project__text {
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+.project__wrap {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  font-size: $portfolioTitleSize;
+  line-height: 1.55;
+  color: $heroTextColor;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
+  background: rgba(33, 150, 243, 0.9);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-item:hover .project-text-wrap {
+  transform: translateY(0);
+}

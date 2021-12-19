@@ -1,0 +1,117 @@
+.open-menu-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  display: block;
+  border: none;
+  background-color: $primaryBackgroundColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $hoverTextColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-nav__container {
+  display: flex;
+}
+.mob-menu {
+  position: fixed;
+  background-color: $primaryBackgroundColor;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 5;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.menu-contacts__container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.close-menu-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: block;
+  border: none;
+  background-color: $primaryBackgroundColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $hoverTextColor;
+  }
+}
+
+.menu-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-nav__link {
+  font-weight: $secondaryTitleWeight;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: $linkLetterSpacing;
+  color: $titleTextColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $hoverTextColor;
+  }
+}
+
+.menu-contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.tel__link {
+  font-weight: $secondaryTitleWeight;
+  font-size: 34px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: $linkLetterSpacing;
+  color: $hoverTextColor;
+}
+
+.mail__link {
+  font-weight: $secondaryTitleWeight;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: $linkLetterSpacing;
+  color: $primaryTextColor;
+}
+
+.mob-social__list {
+  display: flex;
+}
+.mob-social__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  .mob-social__link {
+    font-weight: $secondaryTitleWeight;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: $linkLetterSpacing;
+    color: $hoverTextColor;
+  }
+}
