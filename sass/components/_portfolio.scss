@@ -121,13 +121,7 @@
     height: 294px;
   }
 }
-.project__container {
-  width: 100%;
-  padding: 20px 24px;
-  background: $primaryBackgroundColor;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
+
 .one-line {
   @media screen and (min-width: 768px) {
     min-height: 147.91px;
@@ -137,6 +131,15 @@
     min-height: 111.91px;
   }
 }
+
+.project__container {
+  width: 100%;
+  padding: 20px 24px;
+  background: $primaryBackgroundColor;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
 .project__item {
   margin-bottom: 30px;
   cursor: pointer;

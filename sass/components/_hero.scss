@@ -14,6 +14,11 @@
   margin: 0 auto;
   flex-grow: 1;
   color: $heroTextColor;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -31,8 +36,6 @@
 
 @media screen and (min-width: 481px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -52,8 +55,6 @@
 
 @media screen and (min-width: 769px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -68,13 +69,6 @@
         ),
         url(../image/hero-des-2x.jpg);
     }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 

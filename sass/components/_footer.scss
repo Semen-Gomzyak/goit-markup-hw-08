@@ -22,6 +22,7 @@
     display: flex;
     align-items: baseline;
     margin-bottom: 60px;
+    justify-content: space-around;
   }
 
   @media screen and (min-width: 1200px) {
@@ -30,7 +31,6 @@
 }
 .adress-container {
   margin-bottom: 60px;
-
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
@@ -40,22 +40,15 @@
   }
 }
 .logo__item {
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 .join__container {
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
 
   @media screen and (max-width: 767px) {
+    min-height: 80px;
     margin-bottom: 60px;
   }
 }
@@ -161,9 +154,10 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 93px;
+    text-align: left;
   }
 }
+
 .subscribe__input {
   display: block;
   background-color: $herofootBackgroundColor;

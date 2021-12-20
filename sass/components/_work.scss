@@ -2,10 +2,11 @@
   display: none;
 
   @media screen and (min-width: 1200px) {
-    display: contents;
+    display: list-item;
     padding-bottom: 94px;
   }
 }
+
 .work__title {
   font-family: $primaryFamily;
   font-weight: $primaryTitleWeight;
