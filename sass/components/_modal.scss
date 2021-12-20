@@ -17,7 +17,7 @@
 
 .modal {
   min-width: 94%;
-  padding: 40px;
+  padding: 40px 39px 40px 41px;
   justify-content: center;
   align-items: center;
   background-color: $primaryBackgroundColor;
@@ -40,6 +40,7 @@
   @media screen and (min-width: 1200px) {
     min-width: 450px;
     min-height: 609px;
+    padding: 40px;
   }
 }
 .modal__close {
@@ -197,6 +198,7 @@
 .policy__label {
   display: flex;
   justify-content: left;
+  justify-content: center;
 }
 .policy__icon {
   fill: $heroTextColor;

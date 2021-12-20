@@ -1350,7 +1350,7 @@ body.modal-open {
 
 .modal {
   min-width: 94%;
-  padding: 40px;
+  padding: 40px 39px 40px 41px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1383,6 +1383,7 @@ body.modal-open {
   .modal {
     min-width: 450px;
     min-height: 609px;
+    padding: 40px;
   }
 }
 
@@ -1597,6 +1598,9 @@ body.modal-open {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .policy__icon {
