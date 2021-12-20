@@ -1350,7 +1350,7 @@ body.modal-open {
 
 .modal {
   min-width: 94%;
-  padding: 40px 39px 40px 41px;
+  padding: 40px 35px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1374,7 +1374,7 @@ body.modal-open {
 
 @media screen and (min-width: 480px) {
   .modal {
-    min-width: 450px;
+    min-width: 498px;
     min-height: 609px;
   }
 }
