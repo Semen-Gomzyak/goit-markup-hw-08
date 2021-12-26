@@ -695,9 +695,11 @@ body.modal-open {
   }
 }
 
-.team__list {
-  margin: 0;
-  padding: 0;
+@media screen and (max-width: 767px) {
+  .team__list {
+    margin: 0;
+    padding: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__list {
