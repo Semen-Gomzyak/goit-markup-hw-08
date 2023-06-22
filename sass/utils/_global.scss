@@ -21,7 +21,7 @@ img {
 body {
   background-color: $primaryBackgroundColor;
   color: $primaryTextColor;
-  font-family: $primaryFamily;
+  font-family: $primaryFamily, sans-serif;
   letter-spacing: $primaryLetterSpacing;
 
   &.modal-open {
