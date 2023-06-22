@@ -1,0 +1,71 @@
+.contact__hero{
+    display: flex;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/contact-hero-min.jpg);
+  background-color: $herofootBackgroundColor;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  flex-grow: 1;
+  color: $heroTextColor;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px; 
+  }
+}
+
+.contact__hero--title {
+  font-family: $primaryFamily;
+  font-weight: $heroWeight;
+  font-size: $logoSize;
+  line-height: 1.61;
+  letter-spacing: $titleButtonLetterSpacing;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: $heroSize;
+    line-height: 1.36;
+  }
+}
+
+.contacts__icon {
+      fill: #757575;
+}
+
+.contacts__link{
+    font-size: $primarySize;
+  line-height: 1.71;
+  text-align: left;
+  vertical-align: top;
+  display: block;
+
+    &:hover,
+  &:focus {
+    color: $hoverTextColor;
+  }
+}
+
+.contact__from--container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact__form--image{
+  width: 400px;
+
+    @media screen and (max-width: 1200px) {
+    width: 300px;
+  }
+
+      @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

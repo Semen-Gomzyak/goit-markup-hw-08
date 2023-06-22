@@ -99,17 +99,17 @@
             <div class="container">
 
                 <ul class="buttons__list list">
-                    <li class="buttons__item"> <button type="button" class="portfolio__buttons buttons__current"> Все </button> </li>
-                    <li class="buttons__item"><button type="button" class="portfolio__buttons">Веб-сайты </button></li>
-                    <li class="buttons__item"><button type="button" class="portfolio__buttons"> Приложения</button></li>
-                    <li class="buttons__item"><button type="button" class="portfolio__buttons"> Дизайн</button></li>
-                    <li class="buttons__item"><button type="button" class="portfolio__buttons">Маркетинг </button></li>
+                    <li class="buttons__item"> <button type="radio" name="category" class="portfolio__buttons buttons__current" checked data-filter="all"> Все </button> </li>
+                    <li class="buttons__item"><button type="radio" name="category" class="portfolio__buttons" data-filter="websites">Веб-сайты </button></li>
+                    <li class="buttons__item"><button type="radio" name="category" class="portfolio__buttons" data-filter="applications"> Приложения</button></li>
+                    <li class="buttons__item"><button type="radio" name="category" class="portfolio__buttons" data-filter="design"> Дизайн</button></li>
+                    <li class="buttons__item"><button type="radio" name="category" class="portfolio__buttons" data-filter="marketing">Маркетинг </button></li>
                 </ul>
 
 
                 <ul class="project list">
                     <h1 class="visually-hidden">Наши работы</h1>
-                    <li class="project__item">
+                    <li class="project__item" data-category="websites">
                         
                         <div class="project__wrap">
                             <picture>
@@ -143,7 +143,8 @@
                         
                         </div>
                     </li>
-                    <li class="project__item">
+
+                    <li class="project__item" data-category="design">
                         
                         <div class="project__wrap">
                             <picture>
@@ -185,7 +186,7 @@
                         
                     </li>
 
-                    <li class="project__item">
+                    <li class="project__item" data-category="applications">
                         <div class="project__wrap">
                             <picture>
                                 <source
@@ -221,7 +222,7 @@
                         </div>
                     </li>
 
-                    <li class="project__item">
+                    <li class="project__item" data-category="marketing">
                         <div class="project__wrap">
                             <picture>
                                 <source srcset="
@@ -251,7 +252,7 @@
                         </div>
                     </li>
 
-                    <li class="project__item">
+                    <li class="project__item" data-category="applications">
                         <div class="project__wrap">
                             <picture>
                                 <source srcset="
@@ -281,7 +282,7 @@
                         </div>
                     </li>
 
-                    <li class="project__item">
+                    <li class="project__item" data-category="websites">
                         <div class="project__wrap">
                             <picture>
                                 <source srcset="
@@ -311,7 +312,7 @@
                         </div>
                     </li>
 
-                    <li class="project__item">
+                    <li class="project__item" data-category="design">
                         <div class="project__wrap">
                             <picture>
                                 <source srcset="
@@ -341,7 +342,7 @@
                         </div>
                     </li>
 
-                    <li class="project__item">
+                    <li class="project__item" data-category="marketing">
                         <div class="project__wrap">
                             <picture>
                             <source srcset="
@@ -371,7 +372,7 @@
                         </div>
                     </li>
 
-                    <li class="project__item">
+                    <li class="project__item" data-category="applications">
                         <div class="project__wrap">
                             <picture>
                                 <source srcset="
@@ -419,7 +420,7 @@
                             </li>
                             <li class="footer__item"><a href="mailto:info@devstudio.com"
                                     class="footer__link link">info@devstudio.com</a></li>
-                            <li class="footer__item"><a href="tel:+380961111111" class="footer__link link">+38 099 111 11
+                            <li class="footer__item"><a href="tel:+380991111111" class="footer__link link">+38 099 111 11
                                     11</a></li>
     
                         </ul>
@@ -477,6 +478,7 @@
             </div>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/radioButtons.js"></script>
 
 
 </body>
